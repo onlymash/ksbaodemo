@@ -50,6 +50,7 @@ class MediClassFragment : BindingFragment<FragmentMediClassListBinding>() {
         }
         binding.retry.setOnClickListener {
             binding.progressCircular.isVisible = true
+            binding.retry.isVisible = false
             ksbViewModel.fetchKsbClass()
         }
     }
