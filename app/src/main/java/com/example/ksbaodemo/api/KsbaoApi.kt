@@ -12,7 +12,7 @@ import retrofit2.http.Query
 interface KsbaoApi {
 
     companion object {
-        private val BASE_URL = "https://slb-activity.ksbao.com"
+        private const val BASE_URL = "https://slb-activity.ksbao.com"
         fun createApi(): KsbaoApi {
             val json = Json {
                 ignoreUnknownKeys = true
