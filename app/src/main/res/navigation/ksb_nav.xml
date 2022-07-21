@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ksb_nav"
+    app:startDestination="@id/nav_medi_class">
+
+    <fragment
+        android:id="@+id/nav_medi_class"
+        android:name="com.example.ksbaodemo.ui.ksbclass.MediClassFragment"
+        tools:layout="@layout/fragment_medi_class">
+        <action
+            android:id="@+id/action_open_ks_class_list"
+            app:destination="@+id/nav_ks_class"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_ks_class"
+        android:name="com.example.ksbaodemo.ui.ksbclass.ClassFragment"
+        tools:layout="@layout/fragment_class">
+        <action
+            android:id="@+id/action_open_ks_class_list"
+            app:destination="@+id/nav_ks_class"/>
+        <argument
+            android:name="childs"
+            app:argType="com.example.ksbaodemo.data.Child[]"
+            app:nullable="true"/>
+    </fragment>
+
+</navigation>

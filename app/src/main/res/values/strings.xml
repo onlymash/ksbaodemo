@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ksbaodemo</string>
+    <string name="ks_class">考试类别</string>
+    <string name="search_ks">搜索科目</string>
+    <string name="title_ks_lib">题库</string>
+    <string name="title_ks_course">课程</string>
+    <string name="title_user">用户</string>
+    <string name="retry">重试</string>
+</resources>
